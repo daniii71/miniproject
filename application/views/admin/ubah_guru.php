@@ -53,10 +53,10 @@
                                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                                             <option name="mapel" value="<?php echo $data_guru->id_mapel ?>"
                                                 style="display: none;">
-                                                <?php echo tampil_full_kelas_byid($data_guru->id_mapel) ?></option>
+                                                <?php echo tampil_full_mapel_byid($data_guru->id_mapel) ?></option>
                                                 <?php foreach($mapel as $row): ?>
                                         <option value="<?php echo $row->id ?>">
-                                            <?php echo $row->nama_guru ?></option>
+                                            <?php echo $row->nama_mapel ?></option>
                                         <?php endforeach ?>
                                         </select>
 

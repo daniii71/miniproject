@@ -74,7 +74,7 @@
                             <div class="text-center"> 
                             <br>
                             <br>
-                                <a href="Register.php" style="color:red"><strong>Register</strong></a>
+                                <a href="auth/register" style="color:red"><strong>Register</strong></a>
                             </div> 
                 </form> 
             </div> 

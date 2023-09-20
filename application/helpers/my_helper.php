@@ -9,7 +9,7 @@ function tampil_full_kelas_byid($id)
         return $stmt;
     }
 }
-function tampil_mapel($id)
+function tampil_full_mapel_byid($id)
 {
     $ci =& get_instance();
     $ci->load->database();
