@@ -12,9 +12,25 @@ class Auth extends CI_Controller {
 
  public function register() { 
     // Tampilkan halaman register 
-    $this->load->view('register'); 
-} 
- 
+    $this->load->view('auth/register'); 
+}
+public function process_login(){
+    $email = $this->input->post('email', true);
+    $password = $this->input->post('password', true);
+    $data = ['email'=>$email];
+    $query = $this->m_model->getwhere('admin', $data);
+    $result = $query->row_array();
+
+    if(!empty($result) && md5($password) === $result['password']){
+        $data = [
+            'logged_in' => TRUE,
+            'email' => $result['email'],
+            'username' => $result['username'],
+            'role' => $result['role'],
+            'id' => $result['id'],
+        ];
+    }
+}  
  public function index() 
  { 
   $this->load->view('auth/login'); 

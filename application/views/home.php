@@ -48,7 +48,7 @@
                     <div class="card">
                         <div class="container">
                             <img src="https://binusasmg.sch.id/ppdb/logobinusa.png" alt="Logo" class="mb-4 logo">
-                            <h2 class="card-title text-center">SMK BINA NUSANTARA</h2>
+                            <h3 class="card-title text-center">SMK BINA NUSANTARA DEMAK</h3>
                             <hr class="text-light">
                             <div class="d-flex justify-content-center">
                                 <div class="text-center mx-1">

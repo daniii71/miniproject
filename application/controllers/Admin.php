@@ -70,6 +70,64 @@ if ($this->session->userdata('logged_in')!=true) {
       $this->session->set_flashdata('error', 'gagal..'); 
       redirect(base_url('admin/ubah_siswa/'.$this->input->post('id_siswa'))); 
     } 
-  } 
+  }
+
+
+  
+ public function guru() 
+ { 
+    $data['guru'] = $this->m_model->get_data('guru')->result(); 
+  $this->load->view('admin/guru', $data); 
+ } 
+ public function hapus_guru($id) 
+ { 
+     $this->m_model->delete('guru', 'id_guru', $id); 
+     redirect(base_url('admin/guru')); 
+ } 
+ public function tambah_guru() 
+ { 
+    $data['mapel'] = $this->m_model->get_data('mapel')->result(); 
+  $this->load->view('admin/Tambah_guru', $data); 
+ } 
+  
+ public function aksi_Tambah_guru() 
+ { 
+    $data = [ 
+        'nama_guru' => $this->input->post('nama'), 
+        'nisn' => $this->input->post('nisn'), 
+        'gender' => $this->input->post('gender'), 
+        'id_mapel' => $this->input->post('mapel'), 
+    ]; 
+    $this->m_model->tambah_data('guru', $data); 
+    redirect(base_url('admin/guru')); 
+ } 
+ 
+ public function ubah_guru($id){  
+  $data['guru']=$this->m_model->get_by_id('guru', 'id_guru', $id)->result();  
+  $data['mapel']=$this->m_model->get_data('mapel')->result();  
+  $this->load->view('admin/ubah_guru', $data);  
+} 
+ 
+ public function aksi_ubah_guru() 
+ { 
+    $data = array ( 
+        'nama_guru' => $this->input->post('nama'), 
+        'nisn' => $this->input->post('nisn'), 
+        'gender' => $this->input->post('gender'), 
+        'id_mapel' => $this->input->post('mapel'), 
+    ); 
+    $eksekusi=$this->m_model->ubah_data 
+    ('guru', $data, array('id_guru'=>$this->input->post('id_guru'))); 
+    if($eksekusi) 
+    { 
+      $this->session->set_flashdata('sukses', 'berhasil'); 
+      redirect(base_url('admin/guru')); 
+    } 
+    else{ 
+      $this->session->set_flashdata('error', 'gagal..'); 
+      redirect(base_url('admin/ubah_guru/'.$this->input->post('id_guru'))); 
+    } 
+  }
+   
 } 
 ?>
