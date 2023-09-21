@@ -44,7 +44,7 @@
 <body class="flex min-h-screen justify-center items-center bg-black/50">
     <div class="flex flex-col w-1/3 p-6 h-1/2 rounded-md sm:p-10  dark:text-gray-100">
         <div class="mb-8 text-center">
-            <h1 class="my-3 text-4xl font-bold"> REGISTER</h1>
+            <h1 class="my-3 text-4xl font-bold" style="color:red"> REGISTER</h1>
         </div>
         <form action="<?php echo base_url(); ?>Auth/aksi_register" method="post" class="space-y-12">
             <div class="mb-3">
