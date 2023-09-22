@@ -77,7 +77,7 @@
                 </li>
                 <li>
 
-                    <a href="<?php echo base_url('Login/logout'); ?>"
+                    <a type="button" onclick="confirmLogout()"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
 
                         <span class="flex-1 ml-3 whitespace-nowrap" style="color:green">Keluar</span>
@@ -93,7 +93,7 @@
                 <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Dropdown link
+                        SMK  link
                     </a>
                     <div class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">.......</a></li>
@@ -157,6 +157,8 @@
                 </tbody> 
                 <button class="btn btn-sm btn-warning"><a href="<?php echo base_url('admin/tambah_siswa'); ?>" class="btn text-dark fw-bolder text-white">Tambah</a></button>
         </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script> 
     function openNav() { 
         document.getElementById("mySidenav").style.width = "250px"; 
@@ -174,7 +176,25 @@
             }
         }
     </script>
-    </div>
+    <!-- LOGOUT -->
+    <script>
+        function confirmLogout() {
+            Swal.fire({
+                title: 'Yakin mau LogOut?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "<?php echo base_url('auth/logout') ?>";
+                }
+            });
+        }
+    </script>
+</body>
 </body>
 </html>
 </body>

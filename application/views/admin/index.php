@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Index </title>
     <style>
         /* Global Styles */
         body {
@@ -108,14 +108,16 @@
 <body>
     <!-- Navbar -->
 
-    <div class="navbar">
-        <span class="openbtn" onclick="openNav()">&#9776;</span>
-        <span class="ml-3">Notsonic</span>
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Cari...">
-            <button type="submit">Cari</button>
-        </div>
+    <!-- Navbar -->
+<div class="navbar d-flex justify-content-center">
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <span class="ml-3">Notsonic</span>
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Cari...">
+        <button type="submit">Cari</button>
     </div>
+</div>
+
 
     <!-- Side Navbar (Samping) -->
     <div class="sidenav" id="mySidenav">
@@ -129,14 +131,13 @@
         <div class="card">
             <p>Jumlah Kelas</p>
             <h1>9</h1>
-            <a href="" target="_blank" class="login-button">Info untuk lebih lanjut</a>
+            <a href="./admin/detail_kelas" target="_blank" class="login-button">Silahkan Masuk </a>
         </div>
         <div class="card">
             <p>Jumlah Mapel</p>
             <h1>12</h1>
-            <a href="" target="_blank" class="login-button">Info untuk lebih lanjut</a>
+            <a href="./admin/detail_mapel" target="_blank" class="login-button">Bersiap  Pelajaran</a>
         </div>
-    </div>
 
     <script>
         function openNav() {

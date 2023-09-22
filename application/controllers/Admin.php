@@ -71,7 +71,17 @@ if ($this->session->userdata('logged_in')!=true) {
       redirect(base_url('admin/ubah_siswa/'.$this->input->post('id_siswa'))); 
     } 
   }
-
+  public function detail_kelas() 
+  { 
+   $data['kelas'] = $this->m_model->get_data('kelas')->result(); 
+   $this->load->view('admin/detail_kelas', $data); 
+  }
+  
+  public function detail_mapel() 
+  { 
+   $data['mapel'] = $this->m_model->get_data('mapel')->result(); 
+   $this->load->view('admin/detail_mapel', $data); 
+  }
 
   
  public function guru() 
