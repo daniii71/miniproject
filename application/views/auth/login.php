@@ -8,7 +8,7 @@
     <title>Login</title> 
     <style> 
     body {
-            background-image: url(https://smkbinusademak.sch.id/wp-content/uploads/2023/03/photo_6073152918858610122_y.jpg);
+            background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210501/pngtree-welcome-back-to-school-title-written-in-a-chalk-board-image_691852.jpg);
             background-size: cover; 
             background-repeat: no-repeat;
             background-attachment: fixed; 
@@ -69,12 +69,13 @@
                         </div> 
  
                         <br>
+                        <br>
                         <div class="d-grid gap-2 col-6 mx-auto"> 
                         <button type="submit" class="btn btn-primary text-bg-info">Login Bro</button> 
                             <div class="text-center"> 
                             <br>
                             <br>
-                                <a href="auth/register" style="color:red"><strong>Register</strong></a>
+                                <a href="auth/register" style="color:red"><strong>Masuk Register</strong></a>
                             </div> 
                 </form> 
             </div> 

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index </title>
+    <title>Index</title>
+
     <style>
         /* Global Styles */
         body {
@@ -103,6 +104,7 @@
             background-color: #555;
         }
     </style>
+    
 </head>
 
 <body>
@@ -121,9 +123,14 @@
 
     <!-- Side Navbar (Samping) -->
     <div class="sidenav" id="mySidenav">
+        <br>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; closs</a>
+        <br>
         <a href="<?php echo base_url('admin') ?>">Beranda</a>
+        <br>
         <a href="<?php echo base_url('admin/siswa') ?>">Siswa</a>
+        <br>
+        <a href="<?php echo base_url('admin/guru') ?>">Guru</a>
     </div>
 
     <!-- Content -->

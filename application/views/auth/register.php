@@ -9,7 +9,7 @@
 </head>
 <style> 
     body {
-            background-image: url(https://smkbinusademak.sch.id/wp-content/uploads/2023/03/20230222_161021-scaled.jpg);
+            background-image: url(https://img.freepik.com/free-vector/black-white-memphis-patterned-background_53876-114475.jpg?w=360);
             background-size: cover; 
             background-repeat: no-repeat;
             background-attachment: fixed; 
@@ -76,7 +76,7 @@
                 <div>
                     <div class="flex justify-between mb-2">
                         <br>
-                        <label for="role" class="text-sm" style="color:red">ROLE</label>
+                        <label for="role" class="text-sm">ROLE</label>
                         <a rel="noopener noreferrer" href="#" class="text-xs hover:underline dark:text-gray-400"></a>
                     </div>
                     <input type="role" name="role" id="role" placeholder=" role"
@@ -90,7 +90,7 @@
                     <br>
                     <button type="submit"
                         class="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900"
-                        fdprocessedid="r78vz9">register</button>
+                        fdprocessedid="r78vz9"> Go register</button>
                 </div>
                 <br>
                 <p class="px-6 text-sm text-center dark:text-gray-400">apakah sampean sudah ada akun 
