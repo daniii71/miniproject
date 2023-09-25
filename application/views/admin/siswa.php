@@ -1,10 +1,10 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISWA</title>
+    <title>guru</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -30,7 +30,7 @@
     <aside id="default-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
-        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 bg-info">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 bg-secondary">
             <ul class="space-y-2 font-medium">
                 <li>
                     <a href="<?php echo base_url('admin/index') ?>"
@@ -43,7 +43,8 @@
                             <path
                                 d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                         </svg>
-                        <span class="ml-3" style="color:black">Dashboard</span>
+                        <br>
+                        <span class="ml-3" style="color:yellow">Dashboard</span>
                     </a>
                 </li>
                 <li>
@@ -57,10 +58,11 @@
                                 d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
 
                         </svg>
-                        <span class="flex-1 ml-3 whitespace-nowrap" style="color:red">Daftar Siswa</span>
-
+                        <br>
+                        <span class="flex-1 ml-3 whitespace-nowrap" style="color:yellow">Daftar siswa</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="<?php echo base_url('admin/guru') ?>"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -72,15 +74,19 @@
                                 d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
 
                         </svg>
-                        <span class="flex-1 ml-3 whitespace-nowrap" style="color:yellow">Daftar guru</span>
+                        <br>
+                        <span class="flex-1 ml-3 whitespace-nowrap" style="color:red">Daftar guru</span>
                     </a>
                 </li>
                 <li>
 
                     <a type="button" onclick="confirmLogout()"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-
-                        <span class="flex-1 ml-3 whitespace-nowrap" style="color:green">Keluar</span>
+                        
+                        <br>
+                        <a type="button" onclick="confirmLogout()">
+                        <i class="fas fa-sign-out-alt text-danger">KELUAR</i>
+                      </a>
                     </a>
                 </li>
             </ul>
@@ -89,17 +95,12 @@
     <div class="p-4 sm:ml-64">
     <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <a href="">BINUSA</a>
                 <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        SMK  link
+                        SISWA 
                     </a>
-                    <div class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">.......</a></li>
-                        <li><a class="dropdown-item" href="#">.......</a></li>
-                        <li><a class="dropdown-item" href="#">.......</a></li>
-                    </div>
+                    
                 </div>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -119,10 +120,10 @@
                             <thead>
                                 <tr>
                                     <th scope="col">No </th>
-                                    <th scope="col">Nama siswa</th>
+                                    <th scope="col">Nama Siswa</th>
                                     <th scope="col">NISN </th>
                                     <th scope="col"> Gender </th>
-                                    <th scope="col"> Kelas </th>
+                                    <th scope="col"> KELAS </th>
                                     <th scope="col">Aksi</th>
                                 </tr>
                             </thead>
@@ -156,7 +157,7 @@
                     <?php endforeach ?> 
                 </tbody> 
                 <button class="btn btn-sm btn-warning"><a href="<?php echo base_url('admin/tambah_siswa'); ?>" class="btn text-dark fw-bolder text-white">Tambah</a></button>
-        </div>
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script> 
@@ -194,7 +195,6 @@
             });
         }
     </script>
-</body>
 </body>
 </html>
 </body>

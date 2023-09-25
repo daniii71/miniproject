@@ -14,19 +14,26 @@ if ($this->session->userdata('logged_in')!=true) {
  
  public function index() 
  { 
+  $data['mapel'] = $this->m_model->get_data('mapel')->num_rows();
+    $data['siswa'] = $this->m_model->get_data('siswa')->num_rows();
+    $data['guru'] = $this->m_model->get_data('guru')->num_rows();
+    $data['kelas'] = $this->m_model->get_data('kelas')->num_rows();
  
-  $this->load->view('admin/index'); 
+  $this->load->view('admin/index', $data); 
  } 
+//  ini untuk siswa
  public function siswa() 
  { 
     $data['siswa'] = $this->m_model->get_data('siswa')->result(); 
   $this->load->view('admin/siswa', $data); 
  } 
+// untuk menghapus siswa
  public function hapus_siswa($id) 
  { 
      $this->m_model->delete('siswa', 'id_siswa', $id); 
      redirect(base_url('admin/siswa')); 
  } 
+// untuk menambahkan siswa
  public function tambah_siswa() 
  { 
     $data['kelas'] = $this->m_model->get_data('kelas')->result(); 
@@ -45,6 +52,7 @@ if ($this->session->userdata('logged_in')!=true) {
     redirect(base_url('admin/siswa')); 
  } 
  
+// ubah siswa
  public function ubah_siswa($id){  
   $data['siswa']=$this->m_model->get_by_id('siswa', 'id_siswa', $id)->result();  
   $data['kelas']=$this->m_model->get_data('kelas')->result();  
@@ -83,7 +91,8 @@ if ($this->session->userdata('logged_in')!=true) {
    $this->load->view('admin/detail_mapel', $data); 
   }
 
-  
+
+  // funciont guru
  public function guru() 
  { 
     $data['guru'] = $this->m_model->get_data('guru')->result(); 

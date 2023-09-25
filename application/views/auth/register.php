@@ -9,7 +9,7 @@
 </head>
 <style> 
     body {
-            background-image: url(https://img.freepik.com/free-vector/black-white-memphis-patterned-background_53876-114475.jpg?w=360);
+            background-image: url(https://binus.icei.ac.id/static/comprehensive/images/Indonesia_in_Nutshell.png);
             background-size: cover; 
             background-repeat: no-repeat;
             background-attachment: fixed; 
@@ -50,14 +50,14 @@
             <div class="mb-3">
             <div class="ddd">
                 <br>
-                    <label for="email" class="block mb-2 text-sm" style="color:green">EMAIL</label>
+                    <label for="email" class="block mb-2 text-sm" style="color:blue">EMAIL</label>
                     <input type="email" name="email" id="email" placeholder="email" autocomplete="off"
                         class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
                         fdprocessedid="kq4yx">
                 </div>
                 <div class="ddd">
                     <br>
-                    <label for="username" class="block mb-2 text-sm" style="color:orange">USERNAME </label>
+                    <label for="username" class="block mb-2 text-sm" style="color:blue">USERNAME </label>
                     <input type="username" name="username" id="username" placeholder=" username" autocomplete="off"
                         class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
                         fdprocessedid="kq4yx">
@@ -65,7 +65,7 @@
                 <div>
                     <div class="flex justify-between mb-2">
                         <br>
-                        <label for="password" class="text-sm">Password</label>
+                        <label for="password" class="text-sm" style="color:blue">Password</label>
                         <a rel="noopener noreferrer" href="#" class="text-xs hover:underline dark:text-gray-400">Forgot</a>
                     </div>
                     <input type="password" name="password" id="password" placeholder=" password"
@@ -76,7 +76,7 @@
                 <div>
                     <div class="flex justify-between mb-2">
                         <br>
-                        <label for="role" class="text-sm">ROLE</label>
+                        <label for="role" class="text-sm" style="color:blue">ROLE</label>
                         <a rel="noopener noreferrer" href="#" class="text-xs hover:underline dark:text-gray-400"></a>
                     </div>
                     <input type="role" name="role" id="role" placeholder=" role"

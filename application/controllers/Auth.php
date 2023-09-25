@@ -40,6 +40,7 @@ class Auth extends CI_Controller {
         }   
     } 
  
+    // ini register
     public function register() { 
         $this->load->view('auth/register'); 
     } 
@@ -49,9 +50,9 @@ class Auth extends CI_Controller {
         $username = $this->input->post('username', true);  
         $password = $this->input->post('password', true); 
        
-        // Check if the password length is at least 8 characters 
+        // password harus lebih dari 8
         if (strlen($password) < 8) { 
-            // Password is too short, redirect back to registration 
+            // Password 
             redirect(base_url() . "auth/register"); 
         } 
        

@@ -10,7 +10,7 @@
     <style>
 
         body {
-            background-image: url(https://foto.data.kemdikbud.go.id/getImage/20328986/12.jpg);
+            background-image: url(https://binus.icei.ac.id/asset-v1:BINUSx+ECON6069001+23.11+type@asset+block@Icon_Pak_Fauzi.jpeg);
             background-size: cover; 
             background-repeat: no-repeat;
             background-attachment: fixed; 

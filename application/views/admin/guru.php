@@ -44,6 +44,7 @@
                                 d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                         </svg>
                         <br>
+                        <br>
                         <span class="ml-3" style="color:yellow">Dashboard</span>
                     </a>
                 </li>
@@ -58,6 +59,7 @@
                                 d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
 
                         </svg>
+                        <br>
                         <br>
                         <span class="flex-1 ml-3 whitespace-nowrap" style="color:black">Daftar siswa</span>
                     </a>
@@ -75,6 +77,7 @@
 
                         </svg>
                         <br>
+                        <br>
                         <span class="flex-1 ml-3 whitespace-nowrap" style="color:red">Daftar guru</span>
                     </a>
                 </li>
@@ -84,7 +87,9 @@
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         
                         <br>
-                        <span class="flex-1 ml-3 whitespace-nowrap" style="color:black">KELUAR</span>
+                        <a type="button" onclick="confirmLogout()">
+                        <i class="fas fa-sign-out-alt text-danger">KELUAR</i>
+                       </a>
                     </a>
                 </li>
             </ul>
@@ -93,17 +98,12 @@
     <div class="p-4 sm:ml-64">
     <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <a href="">Guru Binus</a>
                 <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         GURU 
                     </a>
-                    <div class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">.......</a></li>
-                        <li><a class="dropdown-item" href="#">.......</a></li>
-                        <li><a class="dropdown-item" href="#">.......</a></li>
-                    </div>
+                    
                 </div>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

@@ -8,7 +8,7 @@
     <title>Login</title> 
     <style> 
     body {
-            background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210501/pngtree-welcome-back-to-school-title-written-in-a-chalk-board-image_691852.jpg);
+            background-image: url(https://binusasmg.sch.id/wp-content/uploads/2021/02/ET-blogpost-remoteworker-May15.png);
             background-size: cover; 
             background-repeat: no-repeat;
             background-attachment: fixed; 
@@ -54,7 +54,7 @@
                 <br>
                     <div class="mb-3">
                         <div class="ddd">
-                            <label for="email" class="block mb-2 text-sm text-center" style="color:yellow">Email Address</label>
+                            <label for="email" class="block mb-2 text-sm text-center" style="color:black">Email Address</label>
                         <input type="email" class="form-control" name="email" id="email" placeholder="Input your email" 
                             aria-describedby="emailHelp"></div> 
                 
@@ -62,7 +62,7 @@
                             <br>
                         <div class="flex justify-between mb-2">
                             <div class="ddd">
-                                <label for="password" class="text-sm" style="color:yellow">Password</label> 
+                                <label for="password" class="text-sm" style="color:black">Password</label> 
                             <input type="password" class="form-control" name="password" id="password" 
                                 placeholder="Input your password" autocomplete="off"> 
                             </div>
